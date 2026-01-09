@@ -1,0 +1,1 @@
+# Documentation of this folder game mechanics
