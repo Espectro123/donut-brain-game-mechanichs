@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dboqql0qs32pi"]
+
+[node name="MarginContainer" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="TextureRect" parent="."]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Menu_Buttons" type="VBoxContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="3D_Mechanics" type="MenuButton" parent="HBoxContainer/VBoxContainer/Menu_Buttons"]
+layout_mode = 2
+button_pressed = true
+text = "3D Mechanics"
+
+[node name="2D_Mechanics" type="MenuButton" parent="HBoxContainer/VBoxContainer/Menu_Buttons"]
+layout_mode = 2
+button_pressed = true
+text = "2D Mechanics"
+
+[node name="Options" type="MenuButton" parent="HBoxContainer/VBoxContainer/Menu_Buttons"]
+layout_mode = 2
+text = "Options"
+alignment = 0
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer"]
+layout_mode = 2
